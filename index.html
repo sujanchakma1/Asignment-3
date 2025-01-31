@@ -3,9 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
+  <title>Asignment-3</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- adlam font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+  <!-- Sora font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <style>
+    .adlam-display-font {
+    font-family: "ADLaM Display", serif;
+  }
   
+    .sora-font {
+      font-family: "Sora", serif;
+  }
+  </style>
+   <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            holud: '#FFDC26',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="sora-font">
+  <header class="mx-auto">
+    <div class="navbar bg-base-100 flex justify-around sm:justify-between md:border-holud md:border-b lg:border-0 xl:border-0 sm:border-b sm:border-holud">
+      <div class="">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden sm:hidden">
+          </div>
+        </div>
+        <div class="hidden sm:flex">
+          <a class="btn text-2xl font-regular bg-white"> 
+            <img src="./c1-assets/logo-header.png" alt="">
+            <h4 class="hidden lg:flex">Browse<span class="text-yellow-400">4</span>Pets</h4></a>
+            
+        </div>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 text-xl">
+          <li><a>Find a pet</a></li>
+          <li><a>Breeds</a></li>
+          <li><a>Contact us</a></li>
+        </ul>
+      </div>
+      <div class="space-x-2 hidden lg:flex">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+        </svg>
+        <a class="btn border-holud text-xl">Login</a>
+        <a class="btn bg-holud text-xl">Register</a> 
+      </div> 
+      <div class="lg:hidden xl:hidden 2xl:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>  
+      </div>  
+    </div>
+  </header>
+
+  <main class="mx-auto">
+
+
+  </main>
+
+  <footer>
+
+
+  </footer>
 </body>
 </html>
