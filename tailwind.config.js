@@ -5,7 +5,7 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-}
+};
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   theme: {

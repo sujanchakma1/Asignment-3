@@ -32,13 +32,14 @@
               holud: '#FFDC26',
               bg: '#FFF9F4',
               card: '#F9DF8A',
+              accent: '#FFDC26',
             }
         }
       }
     }
   </script>
 </head>
-<body class="sora-font">
+<body class="sora-font mx-auto">
   <header class="mx-auto">
     <!-- navbar section -->
     <div class="navbar bg-bg flex lg:mx-auto lg:justify-around xl:justify-around 2xl:justify-around justify-between lg:border-0 2xl:border-0 xl:border-0 border-b border-holud">
@@ -68,8 +69,8 @@
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
         </svg>
-        <a class="btn border-holud text-xl">Login</a>
-        <a class="btn bg-holud text-xl">Register</a> 
+        <a class="btn border-holud text-xl font-normal">Login</a>
+        <a class="btn bg-holud text-xl font-normal">Register</a> 
       </div> 
       <div class="lg:hidden xl:hidden 2xl:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -78,33 +79,28 @@
       </div>  
     </div>
     <!-- banner section -->
-    <!-- <section>
-      <div class="mx-auto">
-        <div class=" md:grid grid-cols-1">
-          <div class="relative left-20 top-20">
-            <h1 class="text-6xl font-bold adlam-display-font ">Pamper Your Pet, <br>
-              Because They Deserve <br>
-              the Bes</h1>
-            <p class="py-6 text-xl">
-              Discover a world of treats, toys, and essentials handpicked for <br>
-              your furry friends. Shop now and make tails wag with joy!
-            </p>
-            <button class="btn bg-holud text-xl">Find a pet</button>
-          </div>
-          <div>
-            <img  src="./c1-assets/cat-big.png" alt="">
-          </div>
+    <section>
+      <div class="card w-10/12 pt-10 mx-auto">
+        <div class="card-body xl:absolute ">
+          <h2 class="card-title mb-5 adlam-display-font text-6xl">Pamper Your Pet,<br>
+             Because They Deserve <br>
+              the Bes</h2>
+          <p class="text-xl mb-5 xl:w-8/12">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+          <a class="btn bg-holud text-xl w-40 font-normal">Find a pet</a>
         </div>
+          <div class="card-actions justify-end">
+             <img src="./c1-assets/cat-big.png" alt="">
+          </div>
       </div>
-    </section> -->
+    </section>
   </header>
 
   <main class="mx-auto">
     <!-- brows catogories -->
-      <h1 class="text-2xl adlam-display-font mt-48 mb-20 mx-auto flex justify-center">Browse By Categories</h1>
-      <section class="lg:flex lg:justify-center mx-auto grid md:grid-cols-2 sm:grid-cols-2 sm:grid md:ml-24 mr-20">
+      <h1 class="text-2xl adlam-display-font mt-48 mb-20 mx-auto w-5/6">Browse By Categories</h1>
+      <section class="lg:flex justify-center mx-auto grid md:grid-cols-2 sm:grid-cols-2 sm:grid md:ml-24 sm:ml-24 mr-20">
            <!-- card 1 -->
-          <div class="card bg-card w-11/12 py-10 mr-5 mb-5">
+          <div class="card bg-card w-5/6 py-10 mr-5 mb-5">
             <figure class="">
               <img
                 src="./c1-assets/dog-cartoon.png"
@@ -118,7 +114,7 @@
             </div>
           </div>
            <!-- card 2 -->
-          <div class="card bg-card w-11/12 py-10 mr-5 mb-5">
+          <div class="card bg-card w-5/6 py-10 mr-5 mb-5">
             <figure class="">
               <img
                 src="./c1-assets/fish-cartoon.png"
@@ -131,7 +127,7 @@
             </div>
           </div>
            <!-- card 3 -->
-          <div class="card bg-card w-11/12 py-10 mr-5 mb-5">
+          <div class="card bg-card w-5/6 py-10 mr-5 mb-5">
             <figure class="">
               <img
                 src="./c1-assets/cat-cartoon.png"
@@ -144,7 +140,7 @@
             </div>
           </div>
            <!-- card 4 -->
-          <div class="card bg-card w-11/12 py-10 mr-5 mb-5">
+          <div class="card bg-card w-5/6 py-10 mr-5 mb-5">
             <figure class="">
               <img
                 src="./c1-assets/bird-cartoon.png"
@@ -157,7 +153,7 @@
             </div>
           </div>
            <!-- card 5 -->
-          <div class="card bg-card w-11/12 py-10 mr-5 mb-5">
+          <div class="card bg-card w-5/6 py-10 mr-5 mb-5">
             <figure class="">
               <img
                 src="./c1-assets/mouse-cartoon.png"
@@ -170,7 +166,7 @@
             </div>
           </div>
            <!-- card 6 -->
-          <div class="card bg-card w-11/12 py-10 mb-5">
+          <div class="card bg-card w-5/6 py-10 mb-5">
             <figure class="">
               <img
                 src="./c1-assets/rabbit-cartoon.png"
@@ -185,23 +181,23 @@
       </section>
 
       <!-- Tranding products -->
-       <section class="mx-auto bg-bg py-36 mt-28">
-        <h1 class="text-2xl adlam-display-font mb-20 mx-auto flex justify-center">Trending Pet Products</h1>
-        <div class="xl:flex 2xl:flex justify-center space-x-10">
+       <section class=" bg-bg py-36 mt-28">
+        <h1 class="text-2xl adlam-display-font mb-20 mx-auto w-5/6">Trending Pet Products</h1>
+        <div class="xl:flex 2xl:flex space-x-5 justify-center">
           <!-- card -->
-          <div class="card bg-card xl:w-96 pt-10 md:w-10/12 md:ml-20">
-            <div class="card-body ">
-              <h2 class="card-title mb-5 adlam-display-font">T-Shirt For Dogs</h2>
-              <p class="text-xl">Discover a world of treats, toys, and essentials handpicked for</p>
+          <div class="card bg-card pt-10 md:ml-10 sm:ml-10">
+            <div class="card-body relative">
+              <h2 class="card-title mb-5 adlam-display-font text-3xl">T-Shirt For Dogs</h2>
+              <p class="text-xl w-4/5">Discover a world of treats, toys, and essentials handpicked for</p>
               <a class="btn bg-white text-xl w-40 font-normal">Shop Now</a> 
-              <div class="card-actions justify-end -mt-24 relative">
+              <div class="card-actions justify-end -mt-24 absolute">
                  <img src="./c1-assets/cute-pet-small.png" alt="">
               </div>
             </div>
           </div>
-          <div class="grid xl:grid-cols-3 2xl:grid-cols-3 grid-cols-2 xl:mt-0 2xl:mt-0 mt-10">
+          <div class="grid xl:grid-cols-3 2xl:grid-cols-3 grid-cols-2 xl:mt-0 2xl:mt-0 mt-10 ">
              <!-- card-1 -->
-          <div class="card card-side border-2 w-11/12 xl:w-72 mr-5 mb-5 bg-white">
+          <div class="card card-side border-2 mr-5 mb-5 bg-white">
             <figure>
               <img class="bg-bg p-5 rounded-xl"
                 src="./c1-assets/dog-cartoon.png" />
@@ -214,7 +210,7 @@
             </div>
           </div>
           <!-- card 2 -->
-          <div class="card card-side border-2  w-11/12 xl:w-72 mr-5 mb-5 bg-white">
+          <div class="card card-side border-2  mr-5 mb-5 bg-white">
             <figure>
               <img class="bg-bg p-5 rounded-xl"
                 src="./c1-assets/fish-cartoon.png" />
@@ -227,7 +223,7 @@
             </div>
           </div>
           <!-- card 3 -->
-          <div class="card card-side border-2  w-11/12 xl:w-72 mr-5 mb-5 bg-white">
+          <div class="card card-side border-2 mr-5 mb-5 bg-white">
             <figure>
               <img class="bg-bg p-5 rounded-xl"
                 src="./c1-assets/bird-cartoon.png"/>
@@ -240,7 +236,7 @@
             </div>
           </div>
           <!-- card 4 -->
-          <div class="card card-side border-2  w-11/12 xl:w-72 mr-5 mb-5 bg-white">
+          <div class="card card-side border-2  mr-5 mb-5 bg-white">
             <figure>
               <img class="bg-bg p-5 rounded-xl"
                 src="./c1-assets/rabbit-cartoon.png" />
@@ -253,7 +249,7 @@
             </div>
           </div>
           <!-- card 5 -->
-          <div class="card card-side border-2  w-11/12 xl:w-72 mr-5 mb-5 bg-white">
+          <div class="card card-side border-2 mr-5 mb-5 bg-white">
             <figure>
               <img class="bg-bg p-5 rounded-xl"
                 src="./c1-assets/fish-cartoon.png" />
@@ -266,7 +262,7 @@
             </div>
           </div>
           <!-- card 6 -->
-          <div class="card card-side border-2  w-11/12 xl:w-72  mr-5 mb-5 bg-white">
+          <div class="card card-side border-2   mr-5 mb-5 bg-white">
             <figure>
               <img class="bg-bg p-5 rounded-xl"
                 src="./c1-assets/pet-couch.png" />
@@ -279,7 +275,7 @@
             </div>
           </div>
           <!-- card 7 -->
-          <div class="card card-side border-2  w-11/12 xl:w-72  mr-5 mb-5 bg-white">
+          <div class="card card-side border-2   mr-5 mb-5 bg-white">
             <figure>
               <img class="bg-bg p-5 rounded-xl"
                 src="./c1-assets/fish-cartoon.png" />
@@ -292,7 +288,7 @@
             </div>
           </div>
           <!-- card 8 -->
-          <div class="card card-side border-2  w-11/12 xl:w-72 mr-5 mb-5 bg-white">
+          <div class="card card-side border-2  mr-5 mb-5 bg-white">
             <figure>
               <img class="bg-bg p-5 rounded-xl"
                 src="./c1-assets/pet-couch.png" />
@@ -305,7 +301,7 @@
             </div>
           </div>
           <!-- card 9 -->
-          <div class="card card-side border-2  w-11/12 xl:w-72 mr-5 mb-5 bg-white hidden xl:flex">
+          <div class="card card-side border-2  w- mr-5 mb-5 bg-white hidden xl:flex">
             <figure>
               <img class="bg-bg p-5 rounded-xl"
                 src="./c1-assets/rabbit-cartoon.png" />
@@ -320,6 +316,35 @@
           </div>
         </div>
        </section>
+
+       <!-- Everyday low Price section -->
+        <section class="mx-auto">
+          <h1 class="text-4xl adlam-display-font mx-auto w-10/12">Everyday low Price</h1>
+          <div class="flex justify-center w-11/12">
+            <div class="">
+              <div class=" bg-gradient-to-r from-[#E4CEFC] to-[#ACD2FD] hero-content flex-col lg:flex-row-reverse">
+                <img
+                  src="./c1-assets/cute-dog-mid.png"
+                  class="max-w-sm rounded-lg" />
+                <div>
+                  <h1 class="text-xl">Under Price</h1>
+                  <h1 class="text-3xl adlam-display-font">Pet Grooming Mitt</h1> 
+                  <h1 class="text-2xl adlam-display-font text-white">(Easy Hair Removal)</h1> 
+                  <h1 class="text-6xl adlam-display-font">$7.99</h1> 
+                </div>
+              </div>
+            </div>
+            <div class="card xl:w-96 pt-10 md:w-10/12 md:ml-20 bg-gradient-to-br from-[#FFF9F4] to-[#F9DF8A]">
+              <div class="card-body ">
+                <h2 class="card-title mb-5 adlam-display-font">T-Shirt For Dogs</h2>
+                <h1 class="text-6xl adlam-display-font text-accent ">$7.99</h1> 
+                <div class="card-actions justify-end ">
+                   <img src="./c1-assets/cute-pet-mid.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
   </main>
 
